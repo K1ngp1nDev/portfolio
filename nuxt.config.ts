@@ -6,6 +6,17 @@ export default defineNuxtConfig({
   colorMode: { classSuffix: '', preference: 'system', fallback: 'light' },
   css: ['~/assets/css/main.css'],
   components: [{ path: '~/components', pathPrefix: false }],
+  routeRules: {
+    '/': { prerender: true },
+    '/thumbnails/**': {
+      headers: {
+        'cache-control': 'public, max-age=31536000, immutable',
+      },
+    },
+  },
+  nitro: {
+    compressPublicAssets: true,
+  },
   app: {
     head: {
       title: 'Serhii Kulitskyi — Full-Stack Product Engineer',

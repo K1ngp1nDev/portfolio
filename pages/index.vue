@@ -3,7 +3,7 @@ const projects = [
   {
     key: 'merchant',
     name: 'Merchant Control Tower',
-    thumb: '/thumbnails/merchant.png',
+    thumb: '/thumbnails/merchant.webp',
     problem: 'E-commerce operations scattered across orders, inventory, returns and channels.',
     built: 'A dense ops analytics console — KPIs, cross-filtering charts, and orders / inventory / customers / returns / insights with drawers, modals and bulk actions.',
     stack: ['Nuxt 3', 'Vue', 'TypeScript', 'Pinia', 'Nitro', 'Prisma', 'SQLite'],
@@ -14,7 +14,7 @@ const projects = [
   {
     key: 'finance',
     name: 'AI Finance Dashboard',
-    thumb: '/thumbnails/finance.png',
+    thumb: '/thumbnails/finance.webp',
     problem: 'Personal finance data with no clear cash-flow, budget or category insight.',
     built: 'Transactions, analytics, CSV import, budgets, subscriptions, savings goals, reports — plus a keyless AI assistant with per-page prompts.',
     stack: ['Angular', 'NestJS', 'Prisma', 'PostgreSQL', 'AI (Claude)'],
@@ -25,7 +25,7 @@ const projects = [
   {
     key: 'k2',
     name: 'K2 CRM / ERP — Order Accounting',
-    thumb: '/thumbnails/k2.png',
+    thumb: '/thumbnails/k2.webp',
     problem: 'Sales teams drowning in spreadsheets and manual order math.',
     built: 'An order-accounting module: clients, inventory, server-computed orders, analytics, reports, client drill-downs and an activity log.',
     stack: ['Flask', 'React', 'TypeScript', 'SQLite / Postgres'],
@@ -36,7 +36,7 @@ const projects = [
   {
     key: 'care',
     name: 'Care Intake Console',
-    thumb: '/thumbnails/care.png',
+    thumb: '/thumbnails/care.webp',
     problem: 'Outpatient intake & triage operations run by hand on spreadsheets.',
     built: 'A queue + triage-review workflow with patients, appointments, follow-ups, operational reports and an audit log.',
     stack: ['Angular', 'NestJS', 'TypeScript', 'ApexCharts'],

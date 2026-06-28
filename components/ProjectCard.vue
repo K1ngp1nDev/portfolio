@@ -24,7 +24,11 @@ defineProps<{ project: Project }>()
       <img
         :src="project.thumb"
         :alt="project.name + ' screenshot'"
+        width="960"
+        height="600"
         loading="lazy"
+        decoding="async"
+        sizes="(min-width: 1024px) 544px, calc(100vw - 40px)"
         class="aspect-[16/10] w-full bg-slate-100 object-cover object-top transition duration-300 group-hover:scale-[1.02] dark:bg-slate-800"
       />
     </a>
