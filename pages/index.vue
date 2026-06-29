@@ -165,7 +165,7 @@ const approach = [
           <h3 class="mt-10 text-lg font-bold">Stack — chosen per product</h3>
           <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             <div v-for="g in stackGroups" :key="g.label" class="card p-5">
-              <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">{{ g.label }}</p>
+              <p class="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-400">{{ g.label }}</p>
               <ul class="mt-3 space-y-1.5">
                 <li v-for="i in g.items" :key="i" class="text-sm text-slate-600 dark:text-slate-300">{{ i }}</li>
               </ul>
@@ -199,7 +199,7 @@ const approach = [
         </div>
         <div class="flex items-center gap-4 text-sm">
           <a href="https://github.com/K1ngp1nDev" target="_blank" rel="noopener" class="font-medium text-slate-600 hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400">GitHub</a>
-          <span class="text-slate-400">Demos use synthetic data</span>
+          <span class="text-slate-600 dark:text-slate-400">Demos use synthetic data</span>
         </div>
       </div>
     </footer>

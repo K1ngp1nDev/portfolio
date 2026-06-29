@@ -46,7 +46,7 @@ defineProps<{ project: Project }>()
       <div class="mt-auto flex flex-wrap items-center gap-2 pt-2">
         <a :href="project.demo" target="_blank" rel="noopener" class="btn btn-primary">Live demo →</a>
         <a :href="project.github" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
-        <span v-if="project.synthetic" class="ml-auto text-xs text-slate-400">Synthetic demo data</span>
+        <span v-if="project.synthetic" class="ml-auto text-xs text-slate-600 dark:text-slate-400">Synthetic demo data</span>
       </div>
     </div>
   </article>
