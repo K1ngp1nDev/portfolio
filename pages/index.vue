@@ -12,6 +12,50 @@ const projects = [
     synthetic: true,
   },
   {
+    key: 'switchboard',
+    name: 'SWITCHBOARD — AI Agent Control Room',
+    thumb: '/thumbnails/switchboard.webp',
+    problem: 'Agent workflows are hard to trust when you cannot see tools, retries, cost, trace history or approval gates.',
+    built: 'A deterministic execution console: node canvas, replay timeline, trace waterfall, token/cost HUD, command palette and human-in-the-loop approval editing.',
+    stack: ['React', 'TypeScript', 'Vite', 'React Flow', 'Monaco', 'Zustand'],
+    demo: 'https://switchboard.k1ngp1n.com',
+    github: 'https://github.com/K1ngp1nDev/switchboard',
+    synthetic: true,
+  },
+  {
+    key: 'resonance',
+    name: 'RESONANCE LAB',
+    thumb: '/thumbnails/resonance.webp',
+    problem: 'Most portfolios show static screens; realtime graphics need performance, motion craft and careful browser engineering.',
+    built: 'An audio-reactive WebGL particle instrument with GPGPU simulation, Web Audio analysis, responsive controls, reduced-motion mode and cinematic interactions.',
+    stack: ['React', 'Three.js', 'R3F', 'Web Audio', 'GSAP', 'Zustand'],
+    demo: 'https://resonance.k1ngp1n.com',
+    github: 'https://github.com/K1ngp1nDev/resonance-lab',
+    synthetic: true,
+  },
+  {
+    key: 'linehaul',
+    name: 'LINEHAUL — Fleet Operations Console',
+    thumb: '/thumbnails/linehaul.webp',
+    problem: 'Logistics teams need live map context, incidents, SLA drift and vehicle details in one operational view.',
+    built: 'A map-first control room over a synthetic fleet day: animated trips, replay scrubber, incident feed, depot filters, KPI strip and vehicle drill-down drawer.',
+    stack: ['React', 'Vite', 'deck.gl', 'MapLibre', 'GSAP', 'Zustand'],
+    demo: 'https://linehaul.k1ngp1n.com',
+    github: 'https://github.com/K1ngp1nDev/linehaul',
+    synthetic: true,
+  },
+  {
+    key: 'commerce',
+    name: 'Aura Commerce Configurator',
+    thumb: '/thumbnails/commerce.webp',
+    problem: 'Premium storefronts need more than product cards: configuration, cart logic, checkout states and polish.',
+    built: 'A frontend-only e-commerce experience with animated product configurator, filters, cart drawer, mock checkout, order timeline and persisted saved builds.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Framer Motion', 'Zustand'],
+    demo: 'https://commerce.k1ngp1n.com',
+    github: 'https://github.com/K1ngp1nDev/commerce-configurator',
+    synthetic: true,
+  },
+  {
     key: 'finance',
     name: 'AI Finance Dashboard',
     thumb: '/thumbnails/finance.webp',
@@ -47,10 +91,10 @@ const projects = [
 ]
 
 const future = [
-  { title: 'E-commerce storefront + admin', desc: 'A customer storefront paired with an operations / admin back office.' },
-  { title: 'AI companion / assistant', desc: 'Conversational assistants with tools, context and human-in-the-loop review.' },
+  { title: 'AI companion / assistant', desc: 'Conversational assistants with tools, memory, context and human-in-the-loop review.' },
+  { title: 'Marketplace / checkout systems', desc: 'Buyer flows, seller/admin workflows, payments, catalog and order operations.' },
   { title: 'Data automation / reporting', desc: 'ETL-style cleanup and scheduled reporting pipelines over messy sources.' },
-  { title: 'SaaS-style internal products', desc: 'Multi-view internal tools with auth, roles and dashboards.' },
+  { title: 'SaaS-style internal products', desc: 'Multi-view internal tools with auth, roles, dashboards and deployment.' },
 ]
 
 const capabilities = [
@@ -59,6 +103,7 @@ const capabilities = [
   'E-commerce systems',
   'AI assistants & workflow automation',
   'API integrations',
+  'Realtime maps & WebGL experiences',
   'Data-heavy frontend UX',
   'Full-stack deployment',
 ]
@@ -130,7 +175,8 @@ const approach = [
         <p class="eyebrow">Live demos</p>
         <h2 class="mt-2 text-2xl font-bold sm:text-3xl">Things I have shipped</h2>
         <p class="mt-2 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
-          Each is a real, deployed full-stack app you can click through. Built across different stacks on purpose.
+          A mix of full-stack products and frontend-heavy experiences you can click through. Built across different
+          stacks on purpose.
         </p>
         <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
           <ProjectCard v-for="p in projects" :key="p.key" :project="p" />
