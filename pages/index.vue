@@ -47,7 +47,7 @@ const projects = [
   {
     key: 'commerce',
     name: 'Aura Commerce Configurator',
-    thumb: '/thumbnails/commerce.webp',
+    thumb: '/thumbnails/commerce-storefront.webp',
     problem: 'Premium storefronts need more than product cards: configuration, cart logic, checkout states and polish.',
     built: 'A frontend-only e-commerce experience with animated product configurator, filters, cart drawer, mock checkout, order timeline and persisted saved builds.',
     stack: ['Next.js', 'React', 'TypeScript', 'Framer Motion', 'Zustand'],
