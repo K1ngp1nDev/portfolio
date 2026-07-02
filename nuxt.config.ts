@@ -24,6 +24,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'theme-color', content: '#0f172a' },
         {
           name: 'description',
           content:
@@ -35,6 +36,9 @@ export default defineNuxtConfig({
           content: 'Practical web products: dashboards, admin panels, e-commerce, AI assistants and internal tools.',
         },
         { property: 'og:type', content: 'website' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
       ],
     },
   },
